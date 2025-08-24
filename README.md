@@ -1,28 +1,35 @@
-# Shared Bikes Demand Analysis (Multiple Linear Regression)
 
-## Objective
+# 🚲 Shared Bikes Demand Analysis (Multiple Linear Regression)
+
+## 🎯 Objective
 Build a regression model to understand & predict bike demand and identify key drivers.
 
-## Dataset
-- `synthetic_bike_data.csv` (structured like Kaggle bike sharing data). Replace with Kaggle dataset for real-world results.
+---
 
-## Steps
-1. EDA & preprocessing: scaling (MinMaxScaler), one-hot encoding for categorical variables.
-2. Modeling: Linear Regression pipeline with train/test split.
-3. Diagnostics: Variance Inflation Factor (VIF) for multicollinearity; Breusch–Pagan test for heteroscedasticity.
+## 📂 Dataset
+- `synthetic_bike_data.csv` (structured like Kaggle Bike Sharing dataset).  
+- For real-world replication, replace with the **Kaggle [Bike Sharing Demand Dataset](https://www.kaggle.com/c/bike-sharing-demand)**.  
 
-## How to Run
+---
+
+## ⚙️ Steps
+
+### 🔍 EDA & Preprocessing
+- Exploratory Data Analysis (EDA)  
+- Scaling with **MinMaxScaler**  
+- One-hot encoding for categorical variables  
+
+### 🧮 Modeling
+- **Multiple Linear Regression** pipeline  
+- Train/Test split for evaluation  
+
+### 📊 Diagnostics
+- **Variance Inflation Factor (VIF)** → multicollinearity check  
+- **Breusch–Pagan Test** → heteroscedasticity check  
+
+---
+
+## 🚀 How to Run
 ```bash
 pip install -r requirements.txt
 python bikes_analysis.py
-```
-
-## Expected Output
-- R² & MSE on test split
-- VIF table
-- Breusch–Pagan p-value
-
-## Notes for Interview
-- Explain why linear regression fits a continuous target.
-- Discuss impact of variables (e.g., temp positive, humidity negative).
-- Mention assumptions checked (multicollinearity, homoscedasticity).
