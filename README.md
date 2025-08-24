@@ -1,5 +1,5 @@
 
-# 🚲 Shared Bikes Demand Analysis (Multiple Linear Regression)
+# 🚲 Shared Bikes Demand Analysis 
 
 ## 🎯 Objective
 Build a regression model to understand & predict bike demand and identify key drivers.
